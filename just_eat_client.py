@@ -55,19 +55,19 @@ class JustEatClient:
 
     @staticmethod
     def _validate_response_status_codes(response: Response) -> bool:
-        if response.status_code == "400":
+        if response.status_code == 400:
             raise JustEatAPIError("Bad request")
 
-        if response.status_code == "401":
+        if response.status_code == 401:
             raise JustEatAPIError("Unauthorized")
 
-        if response.status_code == "429":
+        if response.status_code == 429:
             raise JustEatAPIError("Too many requests")
 
-        if response.status_code == "500":
+        if response.status_code == 500:
             raise JustEatAPIError("Internal server error")
 
-        if response.status_code == "403":
+        if response.status_code == 403:
             raise JustEatAPIError("Access Forbidden")
 
         return True

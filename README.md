@@ -1,4 +1,4 @@
-# Company-restaurant-service-api-test
+# OakTree Test Task
 
 ## Table of Contents
  1. [Introduction](#introduction)
